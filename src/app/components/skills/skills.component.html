@@ -1,0 +1,42 @@
+<div class="card shadow">
+  <div class="card-header bg-transparent">
+    <div class="row align-items-center">
+      <div class="col">
+        <h6 class="text-uppercase text-muted ls-1 mb-1">Knowledge</h6>
+        <h2 class="mb-0">Skills</h2>
+      </div>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <!-- Chart -->
+    <table class="table align-items-center table-flush">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Item (Filter)</th>
+          <th scope="col">Category</th>
+          <th scope="col">Proficiency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let skill of skills">
+          <th scope="row">
+            <div onClick=""><a href="#">{{skill.name}}</a></div>
+          </th>
+          <td>
+            {{skill.category}}
+          </td>
+          <td>
+            <div class="d-flex align-items-center">
+              <span class="mr-2">{{skill.proficiency}}</span>
+              <div>
+                <div class="progress">
+                  <div class="progress-bar progress-{{skill.proficiency}}" role="progressbar"></div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

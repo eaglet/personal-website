@@ -1,0 +1,10 @@
+//
+// Tables
+//
+
+@import "../core/tables/table";
+
+.table-responsive {
+  overflow: scroll;
+  max-height: 400px;
+}

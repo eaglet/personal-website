@@ -1,0 +1,44 @@
+<div class="card shadow">
+  <div class="card-header bg-transparent">
+    <div class="row align-items-center">
+      <div class="col">
+        <h6 class="text-uppercase text-light ls-1 mb-1">Overview</h6>
+        <h2 class="mb-0">Experience</h2>
+      </div>
+      <div class="col">
+        <ul class="nav nav-pills justify-content-end">
+          <li class="nav-item mr-2 mr-md-0" (click)="filterExperience('All')">
+            <a class="nav-link py-2 px-3" [ngClass]="{'active':clicked===true}" (click)="clicked=true;clicked1=false">
+              <span class="d-none d-md-block">All</span>
+              <span class="d-md-none">All</span>
+            </a>
+          </li>
+          <li class="nav-item mr-2 mr-md-0" (click)="filterExperience('Work')">
+            <a class="nav-link py-2 px-3" [ngClass]="{'active':clicked1===true}" (click)="clicked=false;clicked1=true">
+              <span class="d-none d-md-block">Work</span>
+              <span class="d-md-none">Work</span>
+            </a>
+          </li>
+          <li class="nav-item" (click)="filterExperience('Edu')">
+            <a class="nav-link py-2 px-3" [ngClass]="{'active':clicked1===true}" (click)="clicked=false;clicked1=true">
+              <span class="d-none d-md-block">Education</span>
+              <span class="d-md-none">Edu</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card-body-fix timeline-card">
+    <div class="timeline">
+      <div *ngFor="let item of experience" class="container">
+        <img class="timeline-icon" src="{{item.icon}}">
+        <div class="content">
+          <div class="timeline-date">{{item.date}}</div>
+          <h3 class="timeline-content">{{item.title}}</h3>
+          <pre class="timeline-content">{{item.content}}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+//
+// Progress
+//
+
+@import "../core/progresses/progress";
+
+.progress-5 {
+  width: 100%;
+  background-color: #2dce89 !important;
+}
+
+.progress-4 {
+  width: 80%;
+  background-color: #11cdef !important;
+}
+
+.progress-3 {
+  background-color: #ffd600 !important;
+  width: 60%;
+}
+
+.progress-2 {
+  width: 40%;
+  background-color: #fb6340 !important;
+}
+
+.progress-1 {
+  width: 20%;
+  background-color: #f5365c !important;
+}
