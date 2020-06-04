@@ -2,13 +2,12 @@
   <div class="card-header bg-transparent">
     <div class="row align-items-center">
       <div class="col">
-        <h6 class="text-uppercase text-muted ls-1 mb-1">Knowledge</h6>
-        <h2 class="mb-0">Skills</h2>
+        <h6 *ngIf="!isShortRow" class="text-uppercase text-muted ls-1 mb-1">Knowledge</h6>
+        <h2 class="mb-0">{{title}}</h2>
       </div>
     </div>
   </div>
-  <div class="table-responsive">
-    <!-- Chart -->
+  <div class="table-responsive" [ngClass]="{'table-short': isShortRow}">
     <table class="table align-items-center table-flush">
       <thead class="thead-light">
         <tr>
@@ -20,7 +19,7 @@
       <tbody>
         <tr *ngFor="let skill of skills">
           <th scope="row">
-            <div onClick=""><a href="#">{{skill.name}}</a></div>
+            <button class="btn-link" (click)="selectItem(skill.name)"><a>{{skill.name}}</a></button>
           </th>
           <td>
             {{skill.category}}

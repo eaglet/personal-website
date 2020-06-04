@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   imports: [
@@ -19,14 +20,16 @@ import { SkillsComponent } from './skills/skills.component';
     NavbarComponent,
     SidebarComponent,
     ExperienceComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent
   ],
   exports: [
     FooterComponent,
     NavbarComponent,
     SidebarComponent,
     ExperienceComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent
   ]
 })
 export class ComponentsModule { }

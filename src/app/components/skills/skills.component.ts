@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Experience, DashboardService, Skills } from 'src/app/pages/dashboard/dashboard.service';
 
 @Component({
@@ -9,12 +9,20 @@ export class SkillsComponent implements OnInit {
 
   public clicked = true;
   public clicked1 = false;
-  skills: Skills[] = [];
+
+  @Input() isShortRow = false;
+  @Input() title: string;
+  @Input() skills: Skills[];
+
+  @Output() selectedItemChanged: EventEmitter<string> = new EventEmitter();
 
   constructor(private dashboardService: DashboardService) { }
 
   ngOnInit() {
-    this.skills = this.dashboardService.getSkills();
+  }
+
+  selectItem(item: string) {
+    this.selectedItemChanged.emit(item);
   }
 
 }

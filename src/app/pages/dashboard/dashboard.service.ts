@@ -30,7 +30,6 @@ export class Skills {
 export class Projects {
   id: string;
   name: string;
-  date: string;
   description: string;
   tag: string;
   reference: string;
@@ -38,7 +37,7 @@ export class Projects {
 
 const CARDINFOS: CardInfo[] = [
     { id: '1', title: 'Job Status', icon: 'fa-eye', icon_color: 'bg-success',
-      content: 'Looking for opportunities', sub_title: 'Position', sub_content: 'Full-time' },
+      content: 'Open for opportunities', sub_title: 'Position', sub_content: 'Full-time' },
     { id: '2', title: 'Latest Working Experience', icon: 'fa-suitcase', icon_color: 'bg-warning',
       content: 'J.P.Morgan', sub_title: 'Time', sub_content: '2017.07 - 2019-07' },
     { id: '3', title: 'Highest Education', icon: 'fa-graduation-cap', icon_color: 'bg-yellow',
@@ -51,29 +50,29 @@ const experience: Experience[] = [
   {
     id: '0',
     title: 'My last travel',
-    content: '1. There are so much countries in the world,hello\n2. hellp world',
+    content: '1. Agileo\n2. Digital Strategy',
     date: '2016 - 2019',
     icon: 'https://image.flaticon.com/icons/svg/214/214335.svg',
     category: 'Edu',
-    tag: ''
+    tag: 'Agile,Digital Strategy'
   },
   {
     id: '1',
     title: 'My Job',
-    content: 'The best job I could possibly get!',
+    content: '1. Bloomberg\n 2.NativeScript',
     date: '2015 - 2016',
     icon: 'https://image.flaticon.com/icons/svg/1006/1006517.svg',
     category: 'Work',
-    tag: ''
+    tag: 'Bloomberg,NativeScript'
   },
   {
     id: '2',
     title: 'My Education',
-    content: 'This is the university I went...',
+    content: 'Jira\nJavaScript',
     date: '2011',
     icon: 'https://image.flaticon.com/icons/svg/1141/1141771.svg',
     category: 'Edu',
-    tag: ''
+    tag: 'Jira,JavaScript'
   },
   {
     id: '3',
@@ -87,11 +86,11 @@ const experience: Experience[] = [
   {
     id: '4',
     title: 'My Job',
-    content: 'The best job I could possibly get!',
+    content: 'Leadership\nCommunication\nPresentation',
     date: '2015 - 2016',
     icon: 'https://image.flaticon.com/icons/svg/1006/1006517.svg',
     category: 'Work',
-    tag: ''
+    tag: 'Leadership,Communication,Presentation'
   },
   {
     id: '5',
@@ -104,7 +103,7 @@ const experience: Experience[] = [
   }
 ];
 
-const skills: Skills[] = [
+const technologiesSkills: Skills[] = [
   {
     id: '0',
     name: 'Angular',
@@ -124,18 +123,6 @@ const skills: Skills[] = [
     proficiency: '3'
   },
   {
-    id: '3',
-    name: 'Communication',
-    category: 'Soft skill',
-    proficiency: '4'
-  },
-  {
-    id: '4',
-    name: 'Leadership',
-    category: 'Soft Skill',
-    proficiency: '2'
-  },
-  {
     id: '5',
     name: 'Karma',
     category: 'Framework',
@@ -149,8 +136,8 @@ const skills: Skills[] = [
   },
   {
     id: '7',
-    name: 'CRM',
-    category: 'Domain',
+    name: 'Salesforce',
+    category: 'Platform',
     proficiency: '3'
   },
   {
@@ -183,6 +170,140 @@ const skills: Skills[] = [
     category: 'Version Control',
     proficiency: '3'
   },
+  {
+    id: '13',
+    name: 'Bloomberg',
+    category: 'Platform',
+    proficiency: '3'
+  },
+  {
+    id: '14',
+    name: 'NativeScript',
+    category: 'Cross Platform',
+    proficiency: '3'
+  },
+  {
+    id: '15',
+    name: 'IOS',
+    category: 'mobile',
+    proficiency: '3'
+  },
+];
+
+const otherSkills: Skills[] = [
+  {
+    id: '1',
+    name: 'Digital Strategy',
+    category: 'Other',
+    proficiency: '2'
+  },
+  {
+    id: '2',
+    name: 'Stock Analysis',
+    category: 'Other',
+    proficiency: '2'
+  },
+  {
+    id: '3',
+    name: 'Presentation',
+    category: 'Soft skill',
+    proficiency: '4'
+  },
+  {
+    id: '4',
+    name: 'Leadership',
+    category: 'Soft Skill',
+    proficiency: '2'
+  },
+  {
+    id: '5',
+    name: 'Agile',
+    category: 'Management',
+    proficiency: '2'
+  },
+  {
+    id: '6',
+    name: 'Communication',
+    category: 'Soft skill',
+    proficiency: '4'
+  },
+  {
+    id: '7',
+    name: 'Market Researh',
+    category: 'Soft skill',
+    proficiency: '4'
+  },
+  {
+    id: '7',
+    name: 'Market Researh',
+    category: 'Soft skill',
+    proficiency: '3'
+  },
+  {
+    id: '8',
+    name: 'Project Management',
+    category: 'Soft skill',
+    proficiency: '3'
+  }
+];
+
+const projects: Projects[] = [
+  {
+    id: '0',
+    name: 'Personal Dashboard',
+    description: 'Personal dashboard to display my skill sets and experience.',
+    tag: 'Angular9,AWS,AWS S3,AWS CodePipeline,AWS Codebuild,Typescript',
+    reference: ''
+  },
+  {
+    id: '1',
+    name: 'W/Purpose',
+    description: 'A cross platform app for people to search and order from sustainable restaurant in NYC.',
+    tag: 'NativeScript',
+    reference: ''
+  },
+  {
+    id: '2',
+    name: 'Database in Python',
+    description: 'Implement database system without any prebuilt libraries in Python.',
+    tag: 'Python',
+    reference: ''
+  },
+  {
+    id: '3',
+    name: 'Sales Workstation',
+    description: 'A dashboard which organized sales data from multiple resources and display to sales people.',
+    tag: 'Spring3,Angular4,Angular7,Java,Typescript',
+    reference: ''
+  },
+  {
+    id: '4',
+    name: 'Tokenization System',
+    description: 'Tokenize sensitive data before push to public cloud and detokenize the data when user download from public could.',
+    tag: 'Load Balance,Elastic Search',
+    reference: ''
+  },
+  {
+    id: '5',
+    name: 'Risk Premium Chang After COVID-19',
+    description: '',
+    tag: '',
+    reference: ''
+  },
+  {
+    id: '6',
+    name: 'Business Intelligence System',
+    description: '',
+    tag: '',
+    reference: ''
+  },
+  {
+    id: '7',
+    name: '',
+    description: '',
+    tag: '',
+    reference: ''
+  }
 ];
 
 @Injectable({
@@ -198,7 +319,15 @@ export class DashboardService {
     return experience;
   }
 
-  getSkills() {
-    return skills;
+  getTechnologoesSkills() {
+    return technologiesSkills;
+  }
+
+  getOtherSkills() {
+    return otherSkills;
+  }
+
+  getProjects() {
+    return projects;
   }
 }

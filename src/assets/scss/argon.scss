@@ -71,3 +71,36 @@
 // Angular Differences
 @import "angular-differences/angular-differences";
 
+.remove-tag {
+  font-size: 15px;
+  padding-right: 5px;
+}
+
+.relative {
+  position: relative;
+}
+
+.btn-link {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.no-result {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.no-result > p {
+  font-weight: 600;
+}
