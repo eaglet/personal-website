@@ -104,3 +104,89 @@
 .no-result > p {
   font-weight: 600;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .pt-phone-8 {
+    padding-top: 8rem !important;
+  }
+
+  .profile-photo img{
+    width: 160px;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .timeline-icon {
+    left: -20px;
+  }
+
+  .pt-phone-8 {
+    padding-top: 8rem !important;
+  }
+
+  .profile-photo img{
+    width: 160px;
+  }
+}
+
+// @media only screen and (min-width: 321px) {
+//   .timeline-icon {
+//     left: -20px;
+//   }
+
+//   .profile-photo img{
+//     width: 200px;
+//   }
+
+//   .pt-320-3 {
+//     margin-top: 3rem !important;
+//   }
+// }
+
+@media only screen and (max-width: 320px) {
+  .timeline-icon {
+    left: -20px;
+  }
+
+  .profile-photo img{
+    width: 200px;
+  }
+
+  .pt-320-3 {
+    margin-top: 3rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .timeline-icon {
+    left: -20px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) and (max-device-width: 1841px){
+  .timeline-icon {
+    left: -20px;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  .timeline-icon {
+    left: -50px;
+  }
+}
+
+.profile-photo img{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+
+  max-width: 500px;
+
+  transition: all .15s ease;
+  transform: translate(-50%, -30%);
+
+  border-radius: .375rem;
+}
