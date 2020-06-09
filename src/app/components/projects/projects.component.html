@@ -16,19 +16,22 @@
         <tr>
           <th scope="col">Project name</th>
           <th scope="col">Description</th>
-          <th scope="col">Tag</th>
+          <th scope="col">Technologies</th>
         </tr>
       </thead>
       <tbody *ngIf="projects.length > 0">
         <tr *ngFor="let project of projects">
           <th>
-            {{project.name}}
+            <div *ngIf="project.reference.length === 0">{{project.name}}</div>
+            <div *ngIf="project.reference.length > 0"><a href="{{project.reference}}" class="btn-link" target="_blank"><i class="fas fa-link"></i>{{project.name}}</a></div>
           </th>
           <td>
             {{project.description}}
           </td>
           <td>
-            {{project.tag}}
+            <div *ngIf="project.tag.length > 0">
+              <div *ngFor="let tag of project.tag.split(',').sort()" class="btn btn-sm" [ngClass]="filterTag(tag)">{{tag}}</div>
+            </div>
           </td>
         </tr>
       </tbody>

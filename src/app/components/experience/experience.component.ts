@@ -39,6 +39,16 @@ export class ExperienceComponent implements OnInit, OnChanges {
     }
   }
 
+  getFilterTags(tags: string[]): string[] {
+    const result: string[] = [];
+    tags.forEach(tag => {
+      if (this.selectedItems.includes(tag)) {
+        result.push(tag);
+      }
+    });
+    return result;
+  }
+
   filterExperienceBySelectedItems() {
     if (this.selectedItems.length > 0) {
       this.experience = this.allExperience.filter(e => {

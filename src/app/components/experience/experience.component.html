@@ -32,11 +32,16 @@
   <div *ngIf="experience.length > 0" class="card-body-fix timeline-card">
     <div class="timeline">
       <div *ngFor="let item of experience" class="container">
-        <img class="timeline-icon" src="{{item.icon}}">
+        <img *ngIf="item.icon.length > 0" class="timeline-icon" src="{{item.icon}}">
         <div class="content">
-          <div class="timeline-date">{{item.date}}</div>
-          <h3 class="timeline-content">{{item.title}}</h3>
-          <pre class="timeline-content">{{item.content}}</pre>
+          <h3 class="timeline-content">{{item.position}}</h3>
+          <h4 class="timeline-content">{{item.entity}}</h4>
+          <div class="timeline-support-content">{{item.date}}</div>
+          <div class="timeline-support-content">{{item.location}}</div>
+          <pre class="timeline-content mt-3 mb-3">{{item.content}}</pre>
+          <div *ngIf="selectedItems.length > 0" class="row mb-5 pl-3">
+            <div *ngFor="let tag of getFilterTags(item.tag.split(','))" class="btn btn-sm timeline-tag">{{tag}}</div>
+          </div>
         </div>
       </div>
     </div>

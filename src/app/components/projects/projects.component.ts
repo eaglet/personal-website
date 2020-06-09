@@ -44,4 +44,15 @@ export class ProjectsComponent implements OnInit, OnChanges {
     }
   }
 
+  filterTag(value: string): object {
+    let result = {'timeline-tag': false};
+    for (const item of this.selectedItems) {
+      if (value.indexOf(item) !== -1) {
+        result = {'timeline-tag': true};
+        break;
+      }
+    }
+    return result;
+  }
+
 }

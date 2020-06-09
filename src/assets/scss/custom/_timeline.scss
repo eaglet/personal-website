@@ -19,24 +19,27 @@
 
 /* Container around content */
 .container {
-  padding: 10px 40px;
+  padding-top: 10px;
   position: relative;
   background-color: inherit;
   width: 100%;
+  padding-left: 60px;
 }
 
 .timeline-card {
-  padding-left: 50px;
+  padding-left: 70px;
 }
 
-.timeline-date {
+.timeline-support-content {
   font-size: 0.8125rem;
   color: #8898aa;
 }
 
 .timeline-content {
   font-family: Open Sans, sans-serif;
-  color: #525f7f
+  color: #525f7f;
+  margin-bottom: 0px;
+  white-space: pre-line;
 }
 
 .timeline-icon {
@@ -44,12 +47,17 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  left: -20px;
-  background-color: #236fd1;
+  left: -35px;
+  background-color: white;
   border: 2px solid #236fd1;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
+}
+
+.timeline-tag {
+  background-color: #2dce89;
+  color: white;
 }

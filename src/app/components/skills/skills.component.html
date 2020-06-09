@@ -11,9 +11,18 @@
     <table class="table align-items-center table-flush">
       <thead class="thead-light">
         <tr>
-          <th scope="col">Item (Filter)</th>
-          <th scope="col">Category</th>
-          <th scope="col">Proficiency</th>
+          <th scope="col" (click)="sortBy('name')" class="btn-header"><i class="fas fa-filter"></i>Item (Filter)
+            <i *ngIf="sortedCol === 'name' && nameSortAscendingOrder" class="ni ni-bold-down"></i>
+            <i *ngIf="sortedCol === 'name' && !nameSortAscendingOrder" class="ni ni-bold-up"></i>
+          </th>
+          <th scope="col" (click)="sortBy('category')" class="btn-header">Category
+            <i *ngIf="sortedCol === 'category' && categorySortAscendingOrder" class="ni ni-bold-down"></i>
+            <i *ngIf="sortedCol === 'category' && !categorySortAscendingOrder" class="ni ni-bold-up"></i>
+          </th>
+          <th scope="col" (click)="sortBy('proficiency')" class="btn-header">Proficiency
+            <i *ngIf="sortedCol === 'proficiency' && proficiencySortAscendingOrder" class="ni ni-bold-down"></i>
+            <i *ngIf="sortedCol === 'proficiency' && !proficiencySortAscendingOrder" class="ni ni-bold-up"></i>
+          </th>
         </tr>
       </thead>
       <tbody>

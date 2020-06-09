@@ -34,7 +34,7 @@
       <h6 class="h2 text-white d-inline-block mb-0 relative">Filter: </h6>
     </div>
     <div class="pr-3" *ngFor="let selectedItem of selectedItems">
-      <a href="#" (click)="removeFilter(selectedItem)" class="btn btn-sm btn-neutral"><i class="ni ni-fat-remove remove-tag"></i>{{selectedItem}}</a>
+      <a (click)="removeFilter(selectedItem)" class="btn btn-sm btn-neutral"><i class="ni ni-fat-remove remove-tag"></i>{{selectedItem}}</a>
     </div>
   </div>
   <div class="row">
@@ -53,4 +53,19 @@
       <app-projects [selectedItems]='selectedItems'></app-projects>
     </div>
   </div>
+  <!-- <div class="row">
+    <div class="col-4">
+      <div class="row-xl-6">
+        <app-skills title="Technologies & Languages" [skills]="technologiesSkills" (selectedItemChanged)="filterSelected($event)"></app-skills>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="row-xl-6">
+        <app-experience [selectedItems]='selectedItems'></app-experience>
+      </div>
+      <div class="row-xl-6 mb-5 mb-xl-0 mt-5">
+        <app-projects [selectedItems]='selectedItems'></app-projects>
+      </div>
+    </div>
+  </div> -->
 </div>

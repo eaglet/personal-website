@@ -41,9 +41,13 @@
       <!-- Navigation -->
       <ul class="navbar-nav">
           <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
-              <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link">
+              <a *ngIf="menuItem.path !== 'download-resume'" routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link">
                   <i class="ni {{menuItem.icon}}"></i>
                   {{menuItem.title}}
+              </a>
+              <a *ngIf="menuItem.path === 'download-resume'" href="/assets/projects/Henry-resume-website.pdf" class="nav-link">
+                <i class="ni {{menuItem.icon}}"></i>
+                {{menuItem.title}}
               </a>
           </li>
       </ul>

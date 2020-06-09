@@ -92,6 +92,11 @@
   cursor: pointer;
 }
 
+.btn-header {
+  cursor: pointer;
+  font-weight: 700 !important;
+}
+
 .no-result {
   margin: 0;
   position: absolute;
@@ -118,7 +123,7 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .timeline-icon {
-    left: -20px;
+    left: -35px;
   }
 
   .pt-phone-8 {
@@ -146,7 +151,7 @@
 
 @media only screen and (max-width: 320px) {
   .timeline-icon {
-    left: -20px;
+    left: -35px;
   }
 
   .profile-photo img{
@@ -160,21 +165,21 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .timeline-icon {
-    left: -20px;
+    left: -35px;
   }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) and (max-device-width: 1841px){
   .timeline-icon {
-    left: -20px;
+    left: -35px;
   }
 }
 
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   .timeline-icon {
-    left: -50px;
+    left: -65px;
   }
 }
 
@@ -189,4 +194,16 @@
   transform: translate(-50%, -30%);
 
   border-radius: .375rem;
+}
+
+.profile-icon {
+  color: white;
+  font-size: 2rem;
+}
+
+.row-xl-6
+{
+    max-height: 50%;
+
+    flex: 0 0 0;
 }
