@@ -149,7 +149,7 @@
 //   }
 // }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .timeline-icon {
     left: -35px;
   }
@@ -158,8 +158,12 @@
     width: 200px;
   }
 
-  .pt-320-3 {
+  .pt-400-3 {
     margin-top: 3rem !important;
+  }
+
+  .pb-400-1 {
+    padding-bottom: 1rem !important;
   }
 }
 

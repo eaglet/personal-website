@@ -72,7 +72,7 @@ const experience: Experience[] = [
     date: '12/2019 - 04/2020',
     icon: 'assets/img/theme/wpurpose-logo.jpg',
     category: 'Work',
-    tag: 'NativeScript,Firebase,Project Management,Market Research,Entrepreneurship,Leadership,Market Research,Communication',
+    tag: 'NativeScript,Firebase,Project Management,Product Management,Market Research,Entrepreneurship,Leadership,Communication,Agile',
     location: 'New York'
   },
   {
@@ -124,7 +124,7 @@ const experience: Experience[] = [
     date: '2012 - 2016',
     icon: 'assets/img/theme/ncu-logo.jpg',
     category: 'Edu',
-    tag: 'Leadership,Communication,Presentation,Entrepreneurship',
+    tag: 'Communication,Presentation,Entrepreneurship',
     location: 'Taiwan'
   },
   {
@@ -317,7 +317,7 @@ const otherSkills: Skills[] = [
   },
   {
     id: '7',
-    name: 'Market Researh',
+    name: 'Market Research',
     category: 'Business',
     proficiency: '3'
   },
@@ -332,7 +332,13 @@ const otherSkills: Skills[] = [
     name: 'Business Intelligence',
     category: 'Business',
     proficiency: '4'
-  }
+  },
+  {
+    id: '10',
+    name: 'Product Management',
+    category: 'Management',
+    proficiency: '3'
+  },
 ];
 
 const projects: Projects[] = [
@@ -368,28 +374,28 @@ const projects: Projects[] = [
     id: '4',
     name: 'W/Purpose',
     description: 'A cross platform app for people to search and order from sustainable restaurant in NYC.',
-    tag: 'NativeScript,Bitbucket',
+    tag: 'NativeScript,Bitbucket,Firebase',
     reference: 'https://bitbucket.org/eagletou/wpurpose/src/master/'
   },
   {
     id: '5',
     name: 'Database in Python',
     description: 'Implement database system without any prebuilt libraries in Python.',
-    tag: 'Python3,Firebase',
+    tag: 'Python3',
     reference: 'https://github.com/eaglet/databaseFinalProject'
   },
   {
     id: '6',
     name: 'Sales Workstation',
     description: 'A dashboard which organized sales data from multiple resources and display to sales people.',
-    tag: 'Spring3,Angular4,Angular7,Java,Typescript,Salesforce,Jira,Karma,GAIA',
+    tag: 'Spring3,Angular4,Angular7,Java,Typescript,Salesforce,Jira,Karma,GAIA,Bitbucket',
     reference: ''
   },
   {
     id: '7',
     name: 'Business Intelligence System',
     description: 'Create BI system for J.P.Morgan Asset Management Taiwan',
-    tag: 'SAP, Business Intelligence',
+    tag: 'SAP, Business Intelligence,Bitbucket,Java',
     reference: ''
   }
 ];
